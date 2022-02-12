@@ -1,0 +1,63 @@
+
+@media screen and (max-width: 1023px){
+    body{background-color: black;
+        header{
+            height: 151px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .logo{
+                width: 80px;
+                height: 80px;
+                margin-top: 15px;
+                align-self:center;
+            }
+            .botonMenu{
+              margin-left: 91%;            
+              display: block;            
+              width: 30px;            
+              height: 30px;            
+              padding: 5px;            
+              border-radius: 7px;            
+              background: #666;            
+              color: white;             
+              position: relative;
+            }
+            span{
+              display: block;
+              width: 30px;
+              height: 3px;
+              background: white;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              font-size: 0;
+            }
+            label{
+              cursor: pointer;
+            }
+            #menuDesplegable{
+              display: none;
+            }
+            #listaMenu{
+              display: none;
+              text-align: center;
+              background: white;
+              padding:0;
+              list-style-type: none;
+            }
+            a{
+              display: block;
+              background-color: rgb(20, 20, 20);
+              color: white;
+              text-decoration: none;
+              padding: 10px 0;
+            }
+            a:hover{
+                background-color: red;
+            }
+            #menuDesplegable:checked + #listaMenu{
+              display: block;
+            }
+        }
+    }
+}

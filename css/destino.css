@@ -1,0 +1,51 @@
+@media screen and (max-width: 1023px) {
+  body {
+    background-color: black; }
+    body header {
+      height: 151px;
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      body header .logo {
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
+        align-self: center; }
+      body header .botonMenu {
+        margin-left: 91%;
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border-radius: 7px;
+        background: #666;
+        color: white;
+        position: relative; }
+      body header span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 0; }
+      body header label {
+        cursor: pointer; }
+      body header #menuDesplegable {
+        display: none; }
+      body header #listaMenu {
+        display: none;
+        text-align: center;
+        background: white;
+        padding: 0;
+        list-style-type: none; }
+      body header a {
+        display: block;
+        background-color: #141414;
+        color: white;
+        text-decoration: none;
+        padding: 10px 0; }
+      body header a:hover {
+        background-color: red; }
+      body header #menuDesplegable:checked + #listaMenu {
+        display: block; } }
