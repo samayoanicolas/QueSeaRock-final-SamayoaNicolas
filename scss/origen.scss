@@ -58,6 +58,28 @@
             #menuDesplegable:checked + #listaMenu{
               display: block;
             }
-        }
+        }/*Fin header*/
+     /*Inicio footer*/
+     hr{
+       color: white;
+       size: 5px;
+       width: 75%;
+     }
+     footer{
+       background-color: rgb(70, 60, 60);
+       height: 100px;
+       p{
+         color: white;
+         text-align: center;
+       }
+       .redes{
+         margin-left: 16%;
+                 
+       }
+       .iconos{
+         align-self: center;
+         margin-left: 25px; 
+       }
+     }    
     }
 }

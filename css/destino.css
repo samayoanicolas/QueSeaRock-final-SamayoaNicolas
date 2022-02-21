@@ -1,6 +1,8 @@
 @media screen and (max-width: 1023px) {
   body {
-    background-color: black; }
+    background-color: black;
+    /*Fin header*/
+    /*Inicio footer*/ }
     body header {
       height: 151px;
       width: 100%;
@@ -48,4 +50,19 @@
       body header a:hover {
         background-color: red; }
       body header #menuDesplegable:checked + #listaMenu {
-        display: block; } }
+        display: block; }
+    body hr {
+      color: white;
+      size: 5px;
+      width: 75%; }
+    body footer {
+      background-color: #463c3c;
+      height: 100px; }
+      body footer p {
+        color: white;
+        text-align: center; }
+      body footer .redes {
+        margin-left: 16%; }
+      body footer .iconos {
+        align-self: center;
+        margin-left: 25px; } }
