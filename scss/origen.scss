@@ -6,11 +6,12 @@
 }
 @media screen and (max-width: 1023px){
     body{ 
-      background-color: rgb(10, 10, 10);
+      background-color: black;
       font-family: 'PT Sans Narrow', sans-serif;
+      font-weight: bold;
       color: aqua;
         header{
-          background-color: black;
+          background-color: rgb(5, 5, 5);
             height: 151px;
             width: 100%;
             display: flex;
@@ -206,29 +207,159 @@
        color: white;
        size: 5px;
        width: 75%;
-       margin-left: 12.5%;
-       margin-top: 70px;
-       margin-bottom: 25px;
+       display: block;
+       margin: 90px auto 90px;
      }
      .videoMobile{
        width: 450px;
        height: 350px;
-       margin-left: 4%;
+       display: block;
+       margin: auto;
      }
      footer{
-       background-color: black;
-       height: 100px;
+       background-color: rgb(5, 5, 5);
+       height: 180px;
+       margin-top: 25px;
+       display: flex;
+       flex-direction: column;
+       .spanMobile{
+         text-align: center;
+       }
        p{
          text-align: center;
        }
-       .redes{
-         margin-left: 16%;
-        margin-top: 25px;
-       }
-       .iconos{
-         align-self: center;
-         margin-left: 25px; 
-       }
-     }    
+       .logo{
+         display: block;
+         width: 80px;
+         height: 80px;
+         margin:25px auto 15px auto;
+      }
+      } 
+      h1{
+        margin-top: 105px;
+        text-align: center;
+        font-size: 35px;
+      }  
+     .bandaGrupo, .bandaGrupoRigth{
+       text-align: center;
+       font-size: 25px;
+       text-decoration: underline;
+     }
+     #gridsDays, #gridsDaysRigth{
+       display: block;
+       text-align: center;
+       margin-top: 20px;
+       margin-bottom: 20px;
+       
+      a{
+        text-decoration: none;
+        font-size: 20px;
+      }  
+      img{
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 25px auto 25px;
+      }
+     }
+    .imglonly{
+      display: block;
+      margin: 25px auto 25px auto;
     }
-}
+    h2{
+      text-align: center;
+      font-size: 25px;
+    }
+    .imgTi{
+      width: 370px;
+      height: 400px;
+      display: block;
+      margin: 25px auto 25px auto;
+    }
+    .listProducts{
+      text-align: center;
+      font-size: 25px;
+    }
+    button{
+      display: block;
+      margin: auto;
+      border-radius: 7px;
+      background-color: blue;
+    }
+       .imgFaq{
+         width: 250px;
+         height: 250px;
+         display: block;
+         margin: 20px auto 20px auto;
+         border-radius: 50%;
+       } 
+      .tab{
+        position: relative;
+        margin-left: 25px;
+        margin-right: 25px;       
+        }
+        .tab input{
+        display: none;
+       }
+       .tab label{
+         display: block;
+        margin-top: 10px;
+        padding: 10px;
+        color:#fff;
+        font-weight: bold;
+        background-color: #2d5faf;
+        cursor: pointer;
+        }
+        .tab .content{
+          background-color: #ccdef9;
+          overflow: hidden;
+          transition: max-height 0.3s;
+          max-height: 0;
+          }
+        .tab .content p{
+            padding: 10px;
+          }
+          .tab input:checked~.content{
+            max-height: 100vh;
+          }
+          .tab label::after{
+            content:"\25b6";
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            display: block;
+            transition: all 0.4s;
+          }
+        
+        .tab input:checked~label::after{
+          transform: rotate(90deg);
+        }
+      }
+      h3{
+        text-align: center;
+      }
+      form{
+        text-align: center;
+        input{
+          width: 235px;
+        }       
+        .not{
+          width: 10px; 
+        }
+        .cancelar, .aceptar{
+          display: inline;
+          font-weight: bold;
+          border-color: black;
+        }
+        .cancelar{
+          background-color: red;
+        }
+      }
+    }
+      
+
+
+      
+
+  
+

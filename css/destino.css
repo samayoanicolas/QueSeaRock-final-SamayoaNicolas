@@ -5,12 +5,13 @@
 
 @media screen and (max-width: 1023px) {
   body {
-    background-color: #0a0a0a;
+    background-color: black;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
     color: aqua;
     /*Fin header*/ }
     body header {
-      background-color: black;
+      background-color: #050505;
       height: 151px;
       width: 100%;
       display: flex;
@@ -155,21 +156,117 @@ li:nth-child(3) .slide-circulo {
       color: white;
       size: 5px;
       width: 75%;
-      margin-left: 12.5%;
-      margin-top: 70px;
-      margin-bottom: 25px; }
+      display: block;
+      margin: 90px auto 90px; }
     body .videoMobile {
       width: 450px;
       height: 350px;
-      margin-left: 4%; }
+      display: block;
+      margin: auto; }
     body footer {
-      background-color: black;
-      height: 100px; }
+      background-color: #050505;
+      height: 180px;
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column; }
+      body footer .spanMobile {
+        text-align: center; }
       body footer p {
         text-align: center; }
-      body footer .redes {
-        margin-left: 16%;
-        margin-top: 25px; }
-      body footer .iconos {
-        align-self: center;
-        margin-left: 25px; } }
+      body footer .logo {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 25px auto 15px auto; }
+    body h1 {
+      margin-top: 105px;
+      text-align: center;
+      font-size: 35px; }
+    body .bandaGrupo, body .bandaGrupoRigth {
+      text-align: center;
+      font-size: 25px;
+      text-decoration: underline; }
+    body #gridsDays, body #gridsDaysRigth {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      body #gridsDays a, body #gridsDaysRigth a {
+        text-decoration: none;
+        font-size: 20px; }
+      body #gridsDays img, body #gridsDaysRigth img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 25px auto 25px; }
+    body .imglonly {
+      display: block;
+      margin: 25px auto 25px auto; }
+    body h2 {
+      text-align: center;
+      font-size: 25px; }
+    body .imgTi {
+      width: 370px;
+      height: 400px;
+      display: block;
+      margin: 25px auto 25px auto; }
+    body .listProducts {
+      text-align: center;
+      font-size: 25px; }
+    body button {
+      display: block;
+      margin: auto;
+      border-radius: 7px;
+      background-color: blue; }
+    body .imgFaq {
+      width: 250px;
+      height: 250px;
+      display: block;
+      margin: 20px auto 20px auto;
+      border-radius: 50%; }
+    body .tab {
+      position: relative;
+      margin-left: 25px;
+      margin-right: 25px; }
+    body .tab input {
+      display: none; }
+    body .tab label {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      color: #fff;
+      font-weight: bold;
+      background-color: #2d5faf;
+      cursor: pointer; }
+    body .tab .content {
+      background-color: #ccdef9;
+      overflow: hidden;
+      transition: max-height 0.3s;
+      max-height: 0; }
+    body .tab .content p {
+      padding: 10px; }
+    body .tab input:checked ~ .content {
+      max-height: 100vh; }
+    body .tab label::after {
+      content: "\25b6";
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: block;
+      transition: all 0.4s; }
+    body .tab input:checked ~ label::after {
+      transform: rotate(90deg); }
+  h3 {
+    text-align: center; }
+  form {
+    text-align: center; }
+    form input {
+      width: 235px; }
+    form .not {
+      width: 10px; }
+    form .cancelar, form .aceptar {
+      display: inline;
+      font-weight: bold;
+      border-color: black; }
+    form .cancelar {
+      background-color: red; } }
