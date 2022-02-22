@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Ubuntu&display=swap');
-
+@import "tamanios";
+@import "mixin";
 *{
   margin: 0;
   padding: 0;
@@ -17,8 +18,7 @@
             display: flex;
             flex-direction: column;
             .logo{
-                width: 80px;
-                height: 80px;
+              @include size ($smallogo);
                 margin-top: 15px;
                 align-self:center;
             }
@@ -199,8 +199,7 @@
      .videoMobile{
        width: 450px;
        height: 350px;
-       display: block;
-       margin: auto;
+       @include disau;
      }
      footer{
        background-color: rgb(5, 5, 5);
@@ -216,8 +215,7 @@
        }
        .logo{
          display: block;
-         width: 80px;
-         height: 80px;
+         @include size ($smallogo);
          margin:25px auto 15px auto;
       }
       } 
@@ -269,8 +267,7 @@
       font-size: 25px;
     }
     button{
-      display: block;
-      margin: auto;
+      @include disau;
       border-radius: 7px;
       background-color: blue;
     }
@@ -404,10 +401,9 @@
     }
 
     .slide-item img {
-      display: block;
+      @include disau;
       height: 700px;
       width: 95%;
-      margin: auto;
     }
 
     .slide-control {
